@@ -1,0 +1,92 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-typescript",
+    "plugin:testing-library/dom",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:jest/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "testing-library", "jest-dom",  "@typescript-eslint/eslint-plugin", "prettier", "jest"],
+  "ignorePatterns": ["*.config.ts"],
+  "rules": {
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "quotes": ["warn", "double"],
+    "@typescript-eslint/quotes": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": false,
+        "optionalDependencies": false,
+        "peerDependencies": false,
+        "packageDir": "./"
+      }
+    ],
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": ["off"],
+    "no-console": "warn",
+    "no-underscore-dangle": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "func-style": ["error", "expression", { "allowArrowFunctions": true }],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/prefer-exact-prop": "off",
+    "react/jsx-filename-extension": [
+      "warn",
+      { "extensions": ["test.js", ".jsx", ".tsx"] }
+    ],
+    "react/prop-types": "off",
+    "object-curly-newline": 0,
+    "no-restricted-exports": 1,
+    "no-shadow": 1,
+    "react/no-array-index-key": 1,
+    "arrow-body-style": 1,
+    "react/no-danger": "off",
+    "react/jsx-props-no-spreading": "warn",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "always",
+        "jsx": "always"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "prettier/prettier": "warn"
+  },
+  "settings": {
+    "propWrapperFunctions": [{ "property": "exact", "exact": false }],
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["src"]
+      }
+    }
+  }
+}
+

@@ -1,0 +1,67 @@
+.sidebar {
+  width: 200px;
+  background-color: #1b1a1acc;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0.5vw;
+}
+
+#diagram-sidebar {
+  left: 0;
+}
+
+.dndflow .dndnode {
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+#diagrams-list {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.item.selected {
+  border: solid 1px #d291bc;
+}
+
+.item {
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border: solid 1px transparent;
+}
+
+.item:hover {
+  border: solid 1px #888;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+textarea  {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#right-sidebar {
+  right: 0;
+  width: 400px;
+  background-color: black;
+}
+
+#left-sidebar {
+  z-index: 10000;
+}

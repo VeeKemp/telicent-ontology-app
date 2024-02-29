@@ -1,0 +1,19 @@
+.user-settings-modal {
+  & .MuiPaper-root {
+    max-width: 80%;
+  }
+
+  & li.Mui-selected,
+  li.Mui-selected:hover,
+  li.MuiMenuItem-root:hover {
+    background-color: #1d1d1d;
+  }
+
+  & .teli-button__secondary {
+    background-color: transparent;
+  }
+
+  & hr {
+    color: #6a6a6a;
+  }
+}

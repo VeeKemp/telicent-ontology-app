@@ -1,0 +1,11 @@
+name: Run tests
+on:
+  push:
+    branches-ignore:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  quality:
+    uses: telicent-oss/telicent-test/.github/workflows/feature-branch-test-no-FA.yml@main
+    secrets: inherit

@@ -1,0 +1,53 @@
+/* Terminal.css */
+
+.terminal-container {
+  display: flex;
+}
+
+.line-numbers {
+  min-width: 30px; /* Adjust as needed */
+  padding: 10px;
+  padding-top: 14px;
+  line-height: 2;
+  background-color: #333;
+  color: #999;
+  white-space: pre-wrap;
+}
+
+.line-numbers div {
+  margin-bottom: 5px;
+}
+
+.terminal-text {
+  flex-grow: 1;
+  padding: 10px;
+  padding-top: 11px;
+  background-color: #2b2b2b;
+  overflow-y: scroll;
+  line-height: 2.4;
+}
+
+textarea {
+  opacity: 1; /* Make the textarea visible */
+  width: 100%; /* Take up the entire width of the terminal */
+  height: 100%; /* Take up the entire height of the terminal */
+  background-color: transparent; /* Make background transparent to align with terminal-text background */
+  color: #dcdcdc;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+}
+
+textarea {
+  flex-grow: 1;
+  padding: 10px;
+  margin: 0;
+  background-color: transparent; /* Make background transparent to align with terminal-text background */
+  color: #dcdcdc;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+

@@ -1,0 +1,100 @@
+.node {
+  background-color: #444444;
+}
+
+.node-label {
+  text-align: center;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.class-node .node-label {
+  max-width: 20rem;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.class-node.small {
+  height: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 6px;
+}
+
+.data-type-property {
+  & .triangle-topright {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #444444;
+    border-left: 50px solid transparent;
+  }
+  & .triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #444444;
+    border-right: 50px solid transparent;
+  }
+  
+  &.small .triangle-topright {
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid #444444;
+    border-left: 25px solid transparent;
+  }
+  &.small .triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 25px solid #444444;
+    border-right: 25px solid transparent;
+  }
+}
+
+.triangle-topright {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #444444;
+  border-left: 50px solid transparent;
+}
+
+.triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #444444;
+  border-right: 50px solid transparent;
+}
+
+.object-property-node {
+  & .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 25px solid #444444;
+    border-bottom: 25px solid transparent;
+  }
+
+  & .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 25px solid #444444;
+    border-bottom: 25px solid transparent;
+  }
+
+  &.small .triangle-left {
+    border-top-width: 12px;
+    border-right-width: 12px;
+    border-bottom-width: 12px;
+  }
+
+  &.small .triangle-right {
+    border-top-width: 12px;
+    border-left-width: 12px;
+    border-bottom-width: 12px;
+  }
+}
